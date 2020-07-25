@@ -1,4 +1,4 @@
-## define a class for sudoku solver that uses Backtracking, MRV, and LCV
+## define a class for sudoku solver that using backtracking
 class Solver(object):
     def __init__(self, sudoku):
         self.board = sudoku.board
@@ -43,4 +43,4 @@ class Solver(object):
             if v == val and (k in sudoku.getBlock(loc) or k[0] == row or k[1] == col):
                 return False
         return True
-    ``
+    
